@@ -37,6 +37,7 @@ import io.openliberty.tools.gradle.tasks.CompileJSPTask
 import io.openliberty.tools.gradle.tasks.arquillian.ConfigureArquillianTask
 import io.openliberty.tools.gradle.tasks.DevTask
 import io.openliberty.tools.gradle.tasks.DevcTask
+import io.openliberty.tools.gradle.tasks.VersionTask
 
 class LibertyTaskFactory {
     Project project
@@ -58,6 +59,7 @@ class LibertyTaskFactory {
         project.tasks.create('libertyDump', DumpTask)
         project.tasks.create('libertyJavaDump', JavaDumpTask)
         project.tasks.create('libertyDebug', DebugTask)
+        project.tasks.create('libertyVersion', VersionTask)
         project.tasks.create('deploy', DeployTask)
         project.tasks.create('undeploy', UndeployTask)
         project.tasks.create('installFeature', InstallFeatureTask)
